@@ -6,6 +6,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
   }
   
   *, *::before, 
@@ -41,12 +42,213 @@ img {
   margin: 0 auto;
 }
 
+.primary-text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #313841;
+}
+
+.secondary-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.secondary-heading {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #010101;
+}
+
 /* ------------------------header--------------------------------- */
 
+.header-logo {
+  font-size: 30px;
+  line-height: 20px;
+  color: #010101;
+  font-weight: 700;
+}
+
+.menu-link {
+  font-size: 22px;
+  line-height: 20px;
+  color: #010101;
+  font-weight: 700;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
 .page-header {
+  display: flex;
   background-color: #fcdb00;
+  padding: 60px 235px 70px 237px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 70px;
+}
+
+.logo-image {
+  margin-right: 10px;
+}
+
+/* ------------------------header--------------------------------- */
+
+/*----------------------- Product----------------------------------*/
+
+.product-heading {
+  font-size: 32px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #010101;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.product-subtext {
+  color: #555555;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .product {
   background-color: #fcdb00;
+  padding: 0 273px 107px 240px;
 }
+
+.product-item {
+  width: 39px;
+  height: 40px;
+}
+
+.product-item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.product-item-apple {
+  background: url("../img/product/icon-apple.png") no-repeat center;
+  background-size: contain;
+}
+
+.product-item-android {
+  background: url("../img/product/icon-android.png") no-repeat center;
+  background-size: contain;
+}
+
+.product-item-windows {
+  background: url("../img/product/icon-windows.png") no-repeat center;
+  background-size: contain;
+}
+
+.product-content-wrapper {
+  max-width: 395px;
+  margin-right: auto;
+  padding-top: 65px;
+}
+
+.product-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-wrapper {
+  display: flex;
+}
+
+.product-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/*----------------------- Product----------------------------------*/
+
+/*----------------------- Features-------------------------------- */
+
+.features-heading {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #010101;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.features-text {
+  text-align: center;
+  margin: 0;
+}
+
+.features {
+  background-color: #ffffff;
+  padding: 118px 250px 163px 234px;
+}
+
+/*----------------------- Features-------------------------------- */
+
+/*----------------------- Footer---------------------------------- */
+
+.page-footer {
+  background-color: #010101;
+}
+
+.footer-heading {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #fcdb00;
+  text-align: center;
+}
+
+.footer-text {
+  color: #898989;
+  text-align: center;
+}
+
+.footer-contact {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contact-email {
+  color: #ffffff;
+}
+
+.footer-contact-phone {
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #ffffff;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/*----------------------- Footer---------------------------------- */
