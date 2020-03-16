@@ -204,13 +204,64 @@ img {
 .features-text {
   text-align: center;
   margin: 0;
+  margin-bottom: 88px;
 }
 
 .features {
   background-color: #ffffff;
-  padding: 118px 250px 163px 234px;
+  padding: 118px 250px 163px 233px;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  position: relative;
+  max-width: calc(100% / 3);
+  padding-left: 80px;
+}
+
+.features-item::before {
+  position: absolute;
+  left: -10px;
+  top: 23px;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features-icon-1::before {
+  background-image: url("../img/features/icon-1.png");
+}
+
+.features-icon-2::before {
+  background-image: url("../img/features/icon-2.png");
+}
+
+.features-icon-3::before {
+  background-image: url("../img/features/icon-3.png");
+}
+
+.features-icon-4::before {
+  background-image: url("../img/features/icon-4.png");
+}
+
+.features-icon-5::before {
+  background-image: url("../img/features/icon-5.png");
+}
+
+.features-icon-6::before {
+  background-image: url("../img/features/icon-6.png");
+}
 /*----------------------- Features-------------------------------- */
 
 /*----------------------- Footer---------------------------------- */
