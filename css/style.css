@@ -203,18 +203,20 @@ img {
 
 .features-text {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 88px;
+  max-width: 740px;
 }
 
 .features {
   background-color: #ffffff;
-  padding: 118px 250px 163px 233px;
+  padding: 118px 246px 163px 233px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -222,13 +224,12 @@ img {
 
 .features-item {
   position: relative;
-  max-width: calc(100% / 3);
-  padding-left: 80px;
+  width: calc(100% / 3);
 }
 
 .features-item::before {
   position: absolute;
-  left: -10px;
+  left: -20px;
   top: 23px;
   content: "";
   display: block;
@@ -236,7 +237,6 @@ img {
   height: 45px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .features-icon-1::before {
@@ -262,6 +262,9 @@ img {
 .features-icon-6::before {
   background-image: url("../img/features/icon-6.png");
 }
+
+
+
 /*----------------------- Features-------------------------------- */
 
 /*----------------------- Footer---------------------------------- */
