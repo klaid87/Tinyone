@@ -88,7 +88,7 @@ img {
 .page-header {
   display: flex;
   background-color: #fcdb00;
-  padding: 60px 235px 70px 237px;
+  padding: 62px 235px 58px 237px;
 }
 
 .logo-link {
@@ -110,7 +110,7 @@ img {
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 74px;
 }
 
 .logo-image {
@@ -127,13 +127,13 @@ img {
   font-weight: 700;
   color: #010101;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 29px;
 }
 
 .product-subtext {
   color: #555555;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .product {
@@ -147,7 +147,7 @@ img {
 }
 
 .product-item:not(:last-child) {
-  margin-right: 38px;
+  margin-right: 30px;
 }
 
 .product-item-apple {
@@ -168,7 +168,7 @@ img {
 .product-content-wrapper {
   max-width: 395px;
   margin-right: auto;
-  padding-top: 65px;
+  padding-top: 75px;
 }
 
 .product-list {
@@ -184,7 +184,7 @@ img {
 
 .product-text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 /*----------------------- Product----------------------------------*/
@@ -198,19 +198,19 @@ img {
   color: #010101;
   text-align: center;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .features-text {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 88px;
+  margin-bottom: 86px;
   max-width: 740px;
 }
 
 .features {
   background-color: #ffffff;
-  padding: 118px 246px 163px 233px;
+  padding: 115px 235px 77px 233px;
 }
 
 .features-list {
@@ -218,7 +218,7 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 -45px;
+  margin: 0;
   padding: 0;
 }
 
@@ -226,13 +226,12 @@ img {
   position: relative;
   max-width: 277px;
   padding-left: 70px;
-  margin-bottom: 90px;
-  margin-right: 45px;
+  margin-bottom: 84px;
 }
 
 .features-item::before {
   position: absolute;
-  left: -20px;
+  left: 0;
   top: 0;
   content: "";
   display: block;
@@ -266,14 +265,16 @@ img {
 }
 
 .features-item-heading {
-  margin: 0 0 15px 0;
+  margin: 0 0 11px 0;
 }
 
 .features-item-text {
   margin: 0;
 }
 
-
+.features-item:not(:nth-child(3n + 3)) {
+  margin-right: 25px;
+}
 
 /*----------------------- Features-------------------------------- */
 
@@ -352,14 +353,15 @@ img {
   cursor: pointer;
 }
 
-.footer-button:hover {
+.footer-button:hover,
+.footer-button:focus {
   background-color: #ffffff;
 }
 
 .social-list {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 130px;
 }
@@ -369,6 +371,12 @@ img {
   width: 37px;
   height: 37px;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.social-link:hover,
+.social-link:focus {
+  transform: scale(1.2);
 }
 
 .social-link--facebook {
